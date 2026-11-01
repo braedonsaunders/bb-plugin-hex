@@ -4,6 +4,7 @@
     "target": "ES2022",
     "module": "ESNext",
     "moduleResolution": "bundler",
+    "jsx": "react-jsx",
     "lib": [
       "ES2022",
       "DOM"
@@ -15,6 +16,7 @@
     "skipLibCheck": true
   },
   "include": [
-    "server.ts"
+    "server.ts",
+    "app.tsx"
   ]
 }

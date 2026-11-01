@@ -1,6 +1,6 @@
 {
   "name": "bb-plugin-hex",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Local on-device voice transcription for BB powered by Hex and macOS Apple Speech.",
   "license": "MIT",
   "author": "Braedon Saunders",
@@ -27,6 +27,7 @@
     "build": "bb plugin build"
   },
   "files": [
+    "app.tsx",
     "server.ts",
     "skills",
     "assets",
@@ -44,6 +45,7 @@
       "icon": "./assets/icon.svg"
     },
     "server": "./server.ts",
+    "app": "./app.tsx",
     "skills": [
       "skills"
     ]
@@ -51,6 +53,7 @@
   "devDependencies": {
     "@get-bb/plugin-sdk": "0.6.94",
     "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
     "typescript": "^5.7.0"
   }
 }
