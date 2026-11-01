@@ -1,0 +1,56 @@
+{
+  "name": "bb-plugin-hex",
+  "version": "0.1.0",
+  "description": "Local on-device voice transcription for BB powered by Hex and macOS Apple Speech.",
+  "license": "MIT",
+  "author": "Braedon Saunders",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/braedonsaunders/bb-plugin-hex.git"
+  },
+  "bugs": {
+    "url": "https://github.com/braedonsaunders/bb-plugin-hex/issues"
+  },
+  "homepage": "https://github.com/braedonsaunders/bb-plugin-hex#readme",
+  "keywords": [
+    "bb",
+    "bb-plugin",
+    "voice",
+    "dictation",
+    "transcription",
+    "hex",
+    "apple-speech"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "build": "bb plugin build"
+  },
+  "files": [
+    "server.ts",
+    "skills",
+    "assets",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "bb": ">=0.46",
+    "bbPluginSdk": ">=0.6.94"
+  },
+  "bb": {
+    "name": "Hex Voice",
+    "description": "On-device voice dictation for BB using Hex and Apple Speech (macOS 26 SpeechTranscriber) or local GGUF models.",
+    "branding": {
+      "icon": "./assets/icon.svg"
+    },
+    "server": "./server.ts",
+    "skills": [
+      "skills"
+    ]
+  },
+  "devDependencies": {
+    "@get-bb/plugin-sdk": "0.6.94",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}
